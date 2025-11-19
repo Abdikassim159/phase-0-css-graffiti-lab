@@ -1,1 +1,36 @@
 /* write your override styles here */
+/* 1. Remove tag-1 (class selector) */
+.tag-1 {
+  display: none;
+}
+
+/* 2. Remove tag-2 (id selector) */
+#tag-2 {
+  display: none;
+}
+
+/* 3. Remove tag-3 with multiple classes slick & wicked */
+.slick.wicked {
+  display: none;
+}
+
+/* 4. Remove the div inside a parent → #tag-4 */
+.parent #tag-4 {
+  display: none;
+}
+
+/* 5. Remove tag-5 (id + class slick) */
+#tag-5.slick {
+  display: none;
+}
+
+/* 6. Remove tag-6 nested deeply (descendant selector) */
+.parent div div #tag-6 {
+  display: none;
+}
+
+/* 7. Remove tag-7 slick inside first child */
+.parent div div #tag-7.slick,
+.parent div #tag-7.slick {
+  display: none;
+}
